@@ -1,0 +1,10 @@
+[2019-09-16 20:50:25.895] [renderer1] [error] Illegal argument: character must be non-negative: Error: Illegal argument: character must be non-negative
+	at Object.t.illegalArgument (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:13:195)
+	at new g (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:350:828)
+	at new g (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:350:44)
+	at f (/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:180089)
+	at g (/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:180162)
+	at /usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:181258
+	at y (/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:181444)
+	at Array.map (<anonymous>)
+	at asCompletionResult (/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain.js:1:187002)

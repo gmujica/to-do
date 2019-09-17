@@ -1,0 +1,60 @@
+html {font-family: 'Rubik', sans-serif;}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.flex-container div {
+    margin: 100px;
+}
+
+.addBtn {
+    padding: 10px;
+    width: 10%;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 50%;
+ 
+  }
+  
+  .addBtn:hover {
+    background-color: rgb(119, 233, 134);
+  }
+
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    font-size: 16px;
+    border-bottom: 1px  solid;
+    
+  }
+
+  input:focus{
+    outline: none;
+}
+
+.element {
+  background-color: aqua;
+  max-width: 200px;
+}
+
+.close {
+    background: url(/home/gregory/Documents/to-do/assets/borrar.svg);
+    background-repeat: no-repeat;
+    text-align: end;
+    cursor: pointer;
+    
+  }
+
+  .checkBox {
+  width: 10%;
+}
+  
