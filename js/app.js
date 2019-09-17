@@ -21,7 +21,7 @@ function newElement() {
 	}
 	document.getElementById("Input").value = "";
   
-	var span = document.createElement("SPAN");
+	var span = document.createElement("span");
 	var deleteButton = document.createElement("button");
 
 	deleteButton.className = "deleteButton";
@@ -40,6 +40,8 @@ function newElement() {
 		div.style.display = "none";
 	  }
 	}
+
+
 
 	checkBox.addEventListener('change', (event) => {
 		if (event.target.checked) {
@@ -64,8 +66,11 @@ function newElement() {
 		
 	}
 
+
+
 	$( function() {
 		$( "#List" ).sortable();
 		$( "#List" ).disableSelection();
-	  } );
+	});
+
 

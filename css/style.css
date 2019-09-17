@@ -18,6 +18,7 @@ html {font-family: 'Rubik', sans-serif;}
     font-size: 16px;
     cursor: pointer;
     border-radius: 50%;
+    margin-left: 1.5em;
  
   }
   
@@ -30,13 +31,16 @@ html {font-family: 'Rubik', sans-serif;}
     
   }
 
+ /* .ui-sortabler-helper {
+    width: 500px;
+  }
+*/
   div p, h3, ul {width: 410px;}
 
   input:focus{outline: none;}
 
 .element {
   padding: 7px;
-  width: 90%;
   /*border-bottom: .5px solid;*/
 }
 
@@ -45,7 +49,7 @@ html {font-family: 'Rubik', sans-serif;}
     background-repeat: no-repeat;
     cursor: pointer;
     position: absolute;
-    margin-left: 30%;
+    margin-left: 25% ;
     height: 20PX;
     padding: 7px;
     background-size: 20px;
@@ -57,9 +61,7 @@ html {font-family: 'Rubik', sans-serif;}
   border: none;
 }
 
-  .checkBox {
-  width: 10%;
-}
+  .checkBox {width: 10%;}
 
 .moveButton {
   cursor: pointer;
