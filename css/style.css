@@ -47,7 +47,7 @@ html {font-family: 'Rubik', sans-serif;}
 }
 
 .close {
-    background: url(/home/gregory/Documents/to-do/assets/borrar.svg);
+    background: url(../assets/borrar.svg);
     background-repeat: no-repeat;
     text-align: end;
     cursor: pointer;
