@@ -5,8 +5,13 @@ function newElement() {
 	var checkBox = document.createElement("input");
 	var completedTasksHolder = document.getElementById("completed-tasks");
 
+	var moveButton = document.createElement("button");
+	moveButton.className = "moveButton";
+	li.appendChild(moveButton);
+
 	checkBox.type = "checkbox";
 	checkBox.style.width = '10%';
+	
 	li.appendChild(checkBox);
 	li.appendChild(t);
 	if (inputValue === '') {
@@ -18,12 +23,15 @@ function newElement() {
   
 	var span = document.createElement("SPAN");
 	var deleteButton = document.createElement("button");
-	
+
+	deleteButton.className = "deleteButton";
+
 	span.className = "close";
 	span.appendChild(deleteButton);
+
 	li.style.display = "flex";
 	li.className  = "element";
-	
+
 	li.appendChild(span);
   
 	for (i = 0; i < close.length; i++) {
@@ -56,4 +64,8 @@ function newElement() {
 		
 	}
 
+	$( function() {
+		$( "#List" ).sortable();
+		$( "#List" ).disableSelection();
+	  } );
 

@@ -2,59 +2,73 @@ html {font-family: 'Rubik', sans-serif;}
 
 .flex-container {
     display: flex;
-    justify-content: center;
-    align-self: center;
+    
 }
 
 .flex-container div {
-    margin: 100px;
+    padding: 100px;
+    width: 456PX;
 }
 
 .addBtn {
-    padding: 10px;
+    padding: 7px;
     width: 10%;
     float: left;
     text-align: center;
     font-size: 16px;
     cursor: pointer;
-    transition: 0.3s;
     border-radius: 50%;
  
   }
   
-  .addBtn:hover {
-    background-color: rgb(119, 233, 134);
-  }
-
   input {
     margin: 0;
     border: none;
     border-radius: 0;
     width: 75%;
-    padding: 10px;
-    font-size: 16px;
-    border-bottom: 1px  solid;
+    padding: 7px;
     
   }
 
-  input:focus{
-    outline: none;
-}
+  div p, h3, ul {width: 410px;}
+
+  input:focus{outline: none;}
 
 .element {
-  background-color: aqua;
-  max-width: 200px;
+  padding: 7px;
+  width: 90%;
+  /*border-bottom: .5px solid;*/
 }
 
 .close {
-    background: url(../assets/borrar.svg);
+    background-image: url(../assets/borrar.svg);
     background-repeat: no-repeat;
-    text-align: end;
     cursor: pointer;
+    position: absolute;
+    margin-left: 30%;
+    height: 20PX;
+    padding: 7px;
+    background-size: 20px;
     
   }
+
+.deleteButton {
+  background: none;
+  border: none;
+}
 
   .checkBox {
   width: 10%;
 }
-  
+
+.moveButton {
+  cursor: pointer;
+  border: none;
+  height: 20px;
+  background: none;
+  background-image: url('../assets/Mover.svg');
+  background-repeat: no-repeat;
+}
+
+
+
