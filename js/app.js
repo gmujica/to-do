@@ -1,7 +1,9 @@
 function newElement() {
 	var li = document.createElement("li");
 	var inputValue = document.getElementById("Input").value;
-	var t = document.createTextNode(inputValue);
+	var t = document.createElement("div");
+	t.textContent = inputValue;
+	t.className = "input-value";
 	var checkBox = document.createElement("input");
 	var completedTasksHolder = document.getElementById("completed-tasks");
 
@@ -10,7 +12,6 @@ function newElement() {
 	li.appendChild(moveButton);
 
 	checkBox.type = "checkbox";
-	checkBox.style.width = '10%';
 	
 	li.appendChild(checkBox);
 	li.appendChild(t);
@@ -29,7 +30,7 @@ function newElement() {
 	span.className = "close";
 	span.appendChild(deleteButton);
 
-	li.style.display = "flex";
+	//li.style.display = "flex";
 	li.className  = "element";
 
 	li.appendChild(span);
@@ -40,8 +41,6 @@ function newElement() {
 		div.style.display = "none";
 	  }
 	}
-
-
 
 	checkBox.addEventListener('change', (event) => {
 		if (event.target.checked) {

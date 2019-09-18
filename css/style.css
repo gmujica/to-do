@@ -5,9 +5,14 @@ html {font-family: 'Rubik', sans-serif;}
     
 }
 
-.flex-container div {
+.flex-container div:not(.input-value) {
     padding: 100px;
     width: 456PX;
+}
+
+.input-value {
+  width: 200px;
+  overflow: hidden;
 }
 
 .addBtn {
@@ -31,16 +36,16 @@ html {font-family: 'Rubik', sans-serif;}
     
   }
 
- /* .ui-sortabler-helper {
-    width: 500px;
-  }
-*/
+
   div p, h3, ul {width: 410px;}
 
   input:focus{outline: none;}
 
 .element {
   padding: 7px;
+  display: grid;
+  grid-auto-flow: column;
+  width: 430px;
   /*border-bottom: .5px solid;*/
 }
 
@@ -48,8 +53,6 @@ html {font-family: 'Rubik', sans-serif;}
     background-image: url(../assets/borrar.svg);
     background-repeat: no-repeat;
     cursor: pointer;
-    position: absolute;
-    margin-left: 25% ;
     height: 20PX;
     padding: 7px;
     background-size: 20px;
